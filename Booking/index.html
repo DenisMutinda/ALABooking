@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Booking Software</title>
+</head>
+<body>
+
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper" style="color: #ad2727;">
+      <div class="container">
+        <a href="#" class="brand-logo">Booking</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="" class="btn white black-text">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+  </ul>
+
+  <div class="container">
+    <br />
+
+    <div class="row">
+      <div class="col s12 m8 offset-m2">
+        <div class="card blue darken-1 z-depth-3">
+          <div class="card-content white-text">
+            <span class="card-title">Name Upcoming Bookings</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <!--
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        -->
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/Excellence.JPG" >
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Make booking<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Make a new booking<i class="material-icons right">close</i></span>
+            <p>Use the button below to book any room of your choice.<p>
+            <br />
+            <a class="waves-effect waves-light btn orange modal-trigger" href="#terms"><i class="material-icons left">add_circle_outline</i>Book a room</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator responsive-img circle" src="img/Diversity.JPG">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Availabe rooms<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Available rooms<i class="material-icons right">close</i></span>
+            <p>Use the button below to book any room of your choice.<p>
+            <br />
+            <a class="waves-effect waves-light btn orange modal-trigger" href="#terms"><i class="material-icons left">add_circle_outline</i>Book a room</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="terms" class="modal" style="width: 65%">
+    <div class="modal-content">
+      <h4>Book A Room</h4>
+      <div class="col s12 l5 offset-l2">
+        <form>
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <select class="icons">
+                <optgroup label="LCs">
+                  <option value="1" data-icon="img/ALA_0001.JPG">Option 1</option>
+                  <option value="2" data-icon="img/man.jpg">Option 2</option>
+                </optgroup>
+                <optgroup label="Value Rooms">
+                  <option value="1">Curiosity</option>
+                  <option value="2">Excellence</option>
+                  <option value="3">Compassion</option>
+                  <option value="4">Humility</option>
+                  <option value="5">Diversity</option>
+                </optgroup>
+                <optgroup label="Value Rooms">
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                </optgroup>
+                <optgroup label="Value Rooms">
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                </optgroup>
+                <optgroup label="Value Rooms">
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea" data-length="50"></textarea>
+              <label for="message">Valid Reason</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">alarm</i>
+              <input type="text" id="timefrom" class="timepicker">
+              <label for="timefrom">Used From:</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">schedule</i>
+              <input type="text" id="timeto" class="timepicker">
+              <label for="timeto">Used To:</label>
+            </div>
+          </div>
+
+          <div class="input-field">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-fixed-footer">
+      <div class="input-field center">
+        <button class="btn modal-close">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Allxs</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Canvas</a></li>
+          </ul>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Kampasi</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Back to top</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2020 Copyright
+      <a class="grey-text text-lighten-4 right" href="#!">ELEMENT Co.</a>
+      </div>
+    </div>
+</footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.modal').modal();
+      $('select').formSelect();
+      $('textarea#message').characterCounter();
+      $('.timepicker').timepicker();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+    });
+  </script>
+</body>
+</html>
